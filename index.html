@@ -8,10 +8,10 @@
   <title>AR.js White Frame</title>
 </head>
 <body style="margin: 0; overflow: hidden;">
-<a-scene embedded arjs='sourceType: webcam;'> <!-- handle marker with your own pattern --> 
-<a-marker preset='custom' url="https://raw.githubusercontent.com/Josecontis/AR-resume/main/pattern-eee.patt"> 
-<a-image alt="ciao" src="myimg.jpg" position="0 0 0" rotation="90 180 0 "> 
-</a-marker> <!-- add a simple camera --> 
+<a-scene embedded arjs='sourceType: webcam;'> 
+  <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/Josecontis/AR-resume/main/pattern-img.patt'>
+    <a-image alt="ciao" src="myimg.jpg" position="0 0 0" rotation="90 180 0 ">
+  </a-marker-camera>
 <a-entity camera></a-entity> </a-scene>
 </body>
 </html>
